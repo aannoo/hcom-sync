@@ -28,3 +28,9 @@ Cloudflare Workers sync server for [HCOM](https://github.com/aannoo/claude-hook-
 - `GET /{filename}` - Read file
 - `POST /{filename}` - Write file
 - `DELETE /{filename}` - Delete file
+
+## Free tier limits (no credit card required)
+
+- 1GB KV storage
+- 100k reads/day
+- 1k writes/day

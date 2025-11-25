@@ -1,5 +1,5 @@
 interface Env {
-  BUCKET: R2Bucket;
+  KV: KVNamespace;
   SYNC_TOKEN?: string;
 }
 
@@ -18,16 +18,16 @@ export default {
 
     // GET / - List files
     if (request.method === 'GET' && !path) {
-      const list = await env.BUCKET.list();
-      const files = list.objects.map(obj => obj.key);
+      const list = await env.KV.list();
+      const files = list.keys.map(k => k.name);
       return Response.json(files);
     }
 
     // GET /filename - Read file
     if (request.method === 'GET' && path) {
-      const obj = await env.BUCKET.get(path);
-      if (!obj) return new Response('Not found', { status: 404 });
-      return new Response(obj.body, {
+      const value = await env.KV.get(path, 'arrayBuffer');
+      if (!value) return new Response('Not found', { status: 404 });
+      return new Response(value, {
         headers: { 'Content-Type': 'application/octet-stream' }
       });
     }
@@ -35,13 +35,13 @@ export default {
     // POST /filename - Write file
     if (request.method === 'POST' && path) {
       const body = await request.arrayBuffer();
-      await env.BUCKET.put(path, body);
+      await env.KV.put(path, body);
       return new Response('OK', { status: 200 });
     }
 
     // DELETE /filename - Delete file
     if (request.method === 'DELETE' && path) {
-      await env.BUCKET.delete(path);
+      await env.KV.delete(path);
       return new Response('OK', { status: 200 });
     }
 
