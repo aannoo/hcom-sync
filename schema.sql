@@ -1,4 +1,0 @@
-CREATE TABLE IF NOT EXISTS files (
-  name TEXT PRIMARY KEY,
-  content BLOB
-);
