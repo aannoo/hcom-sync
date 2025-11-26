@@ -6,3 +6,4 @@
 {"timestamp": "2025-11-26T17:01:09.801319+00:00", "type": "status", "instance": "nody", "data": {"status": "active", "context": "tool:Bash", "_sync": {"device": "6558571b-57b9-4487-82bc-da971ce8f6eb", "remote_id": 6}}}
 {"timestamp": "2025-11-26T17:01:16.194410+00:00", "type": "status", "instance": "nody", "data": {"status": "blocked", "context": "Claude needs your permission to use Bash", "_sync": {"device": "6558571b-57b9-4487-82bc-da971ce8f6eb", "remote_id": 7}}}
 {"timestamp": "2025-11-26T17:02:04.981373+00:00", "type": "status", "instance": "nody", "data": {"status": "idle", "context": "", "_sync": {"device": "6558571b-57b9-4487-82bc-da971ce8f6eb", "remote_id": 8}}}
+{"timestamp": "2025-11-26T17:02:15.233131+00:00", "type": "message", "instance": "ext_bigboss", "data": {"from": "bigboss", "sender_kind": "external", "scope": "broadcast", "text": "hi", "recipients": ["nody"], "_sync": {"device": "6558571b-57b9-4487-82bc-da971ce8f6eb", "remote_id": 9}}}
