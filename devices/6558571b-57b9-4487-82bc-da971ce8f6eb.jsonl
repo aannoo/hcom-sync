@@ -143,3 +143,5 @@
 {"timestamp": "2025-11-27T06:59:38.149485+00:00", "type": "status", "instance": "jogu", "data": {"status": "idle", "context": "", "_sync": {"device": "6558571b-57b9-4487-82bc-da971ce8f6eb", "remote_id": 312}}}
 {"timestamp": "2025-11-27T08:25:06.705999+00:00", "type": "status", "instance": "jogu", "data": {"status": "active", "context": "tool:prompt", "_sync": {"device": "6558571b-57b9-4487-82bc-da971ce8f6eb", "remote_id": 317}}}
 {"timestamp": "2025-11-27T08:25:25.110625+00:00", "type": "status", "instance": "jogu", "data": {"status": "idle", "context": "", "_sync": {"device": "6558571b-57b9-4487-82bc-da971ce8f6eb", "remote_id": 318}}}
+{"timestamp": "2025-11-27T08:29:09.425005+00:00", "type": "status", "instance": "jogu", "data": {"status": "active", "context": "tool:prompt", "_sync": {"device": "6558571b-57b9-4487-82bc-da971ce8f6eb", "remote_id": 319}}}
+{"timestamp": "2025-11-27T08:29:27.102297+00:00", "type": "status", "instance": "jogu", "data": {"status": "idle", "context": "", "_sync": {"device": "6558571b-57b9-4487-82bc-da971ce8f6eb", "remote_id": 320}}}
