@@ -1,0 +1,1 @@
+{"timestamp": "2025-11-27T05:28:18.261380+00:00", "type": "message", "instance": "ext_bigboss", "data": {"from": "bigboss", "sender_kind": "external", "scope": "broadcast", "text": "hi", "recipients": ["nodo"], "_sync": {"device": "6558571b-57b9-4487-82bc-da971ce8f6eb", "remote_id": 1}}}
